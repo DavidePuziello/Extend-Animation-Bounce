@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+}
+
+.bounce {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  40% {
+    top: 30px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  40% {
+    top: 30px;
+  }
+  60% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.bg-random:nth-child(1), .bounce:nth-child(1) {
+  background-color: #679CBC;
+}
+.bg-random:nth-child(2), .bounce:nth-child(2) {
+  background-color: #898B11;
+}
+.bg-random:nth-child(3), .bounce:nth-child(3) {
+  background-color: #DEC7DF;
+}/*# sourceMappingURL=style.css.map */
